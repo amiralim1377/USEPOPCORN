@@ -1,0 +1,26 @@
+.inputElem {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  width: 600px;
+  background-color: #111827;
+  padding: 30px;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -ms-border-radius: 50px 50px 50px 50px;
+  -o-border-radius: 50px 50px 50px 50px;
+}
+
+.ErrorElem {
+  color: #111827;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  width: 300px;
+  margin-left: 10px;
+  text-align: end;
+}
