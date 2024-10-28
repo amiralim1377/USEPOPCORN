@@ -1,0 +1,72 @@
+.itemWrapper {
+  height: 450px;
+  width: 200px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -ms-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+}
+
+.itemWrapper:hover {
+  background-color: #151515;
+}
+
+.imgWrapper {
+  padding: 5px;
+}
+
+.imgWrapper img {
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -ms-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+}
+
+.textWrapper {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textWrapper p {
+  color: #ffffff;
+  font-family: Roboto;
+  text-align: center;
+}
+
+.btnWrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btnWrapper button {
+  background: #2c2c2c;
+  color: #5799ef;
+  padding: 10px 30px;
+  font-family: Roboto;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+}
+
+.btnWrapper button:hover {
+  background: #30353c;
+}

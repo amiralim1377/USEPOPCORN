@@ -1,0 +1,10 @@
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/*  */

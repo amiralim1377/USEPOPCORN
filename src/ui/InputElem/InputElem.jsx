@@ -1,28 +1,23 @@
 import { useForm } from "react-hook-form";
 import "./InputElem.css";
 import { useNavigate } from "react-router-dom";
-import { getfilms } from "../../services/getfilms";
-import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
 function InputElem() {
-  const [querykey, setQuerykey] = useState("");
+  const [querykey, setQuerykey] = useState(null);
+  console.log(querykey);
+
   const {
     register,
     handleSubmit,
     formState: { errors: inputErrors },
     reset,
   } = useForm();
-  //   const navigate = useNavigate();
-
-  const { isLoading, data, error } = useQuery({
-    queryKey: ["querykey"],
-    queryFn: () => getfilms(querykey),
-  });
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     setQuerykey(data.film);
-    // navigate(`/search/${data.film}`);
+    navigate(`/search/${data.film}`);
     reset();
   };
 
