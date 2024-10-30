@@ -5,6 +5,7 @@ import AppLayout from "./AppLayout/AppLayout";
 import Search from "./pages/Search/Search";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import DetailsMovie from "./pages/DetailsMovie/DetailsMovie";
+import WatchList from "./pages/WatchList/WatchList";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "watchlist",
-        element: <DetailsMovie />,
+        element: <WatchList />,
       },
     ],
   },

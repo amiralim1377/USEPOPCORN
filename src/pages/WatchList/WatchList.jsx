@@ -1,5 +1,11 @@
+import List from "../../ui/List/List";
+
 function WatchList() {
-  return <div>WatchList</div>;
+  return (
+    <div>
+      <List />
+    </div>
+  );
 }
 
 export default WatchList;
