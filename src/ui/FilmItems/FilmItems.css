@@ -55,6 +55,7 @@
 }
 
 .btnWrapper button {
+  cursor: pointer;
   background: #2c2c2c;
   color: #5799ef;
   padding: 10px 30px;

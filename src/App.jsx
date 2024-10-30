@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AppLayout from "./AppLayout/AppLayout";
 import Search from "./pages/Search/Search";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import DetailsMovie from "./pages/DetailsMovie/DetailsMovie";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,15 @@ const router = createBrowserRouter([
       },
       {
         path: "search/:film",
-        index: true,
         element: <Search />,
+      },
+      {
+        path: "details",
+        element: <DetailsMovie />,
+      },
+      {
+        path: "watchlist",
+        element: <DetailsMovie />,
       },
     ],
   },

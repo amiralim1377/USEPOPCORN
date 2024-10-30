@@ -1,14 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { getfilms } from "../../services/getfilms";
-import { useNavigation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Spinner from "../../ui/spinner/Spinner";
 import "./Search.css";
 import FilmItem from "../../ui/FilmItems/FilmItem";
 import Error from "../../ui/Error/Error";
+
 function Search() {
   const { film } = useParams();
-  const navigation = useNavigation();
-  console.log(navigation.state);
 
   const {
     isLoading,
@@ -18,12 +17,12 @@ function Search() {
     queryKey: ["querykey"],
     queryFn: () => getfilms(film),
   });
-  console.log(filmsdata);
 
   if (isLoading) return <Spinner />;
   if (error || filmsdata.Response == "False")
     return <Error ErrorMessage={filmsdata.Error} />;
-  console.log(error);
+
+  const imdbID = filmsdata?.Search?.imdbID;
 
   return (
     <div>

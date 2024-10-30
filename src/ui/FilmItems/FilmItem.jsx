@@ -1,6 +1,8 @@
+import { Link, useParams } from "react-router-dom";
 import "./FilmItems.css";
 function FilmItem({ item }) {
-  const { Title: title, Poster: poster, Year: year } = item;
+  const { Title: title, Poster: poster, Year: year, imdbID } = item;
+  const { film } = useParams();
   return (
     <li>
       <div className="itemWrapper">
@@ -12,7 +14,9 @@ function FilmItem({ item }) {
           <p>Year:{year}</p>
         </div>
         <div className="btnWrapper">
-          <button>+ More Details</button>
+          <Link to={`/details?imdbID=${imdbID}`}>
+            <button>+ More Details</button>
+          </Link>
         </div>
       </div>
     </li>
