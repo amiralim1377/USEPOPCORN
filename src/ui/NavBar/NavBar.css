@@ -1,5 +1,5 @@
 .NavBarWrapper {
-  background-color: #121212;
+  background-color: #e2b616;
   width: 100%;
   height: 60px;
   display: flex;
@@ -12,7 +12,22 @@
 }
 
 .navbarlogo p {
-  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #133e87;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none solid rgb(255, 255, 255);
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.navbarlogo p:hover {
+  color: #091057;
 }
 
 .navbarinput {
@@ -27,4 +42,56 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  font-size: 16px;
+  border: solid 1px #133e87;
+}
+
+.navbarwatchlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  padding: 5px;
+  /* background-color: red; */
+}
+
+.navbaricon {
+  width: 45px;
+  height: 45px;
+  color: #133e87;
+  /* background-color: green; */
+}
+
+.navbartext {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none solid rgb(255, 255, 255);
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: #133e87;
+
+  /* background-color: blue; */
+}
+
+.watchlistlength {
+  /* background-color: black; */
+  background: #133e87;
+  color: white;
+  padding: 1px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border: solid 1px #1f1f1f;
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
 }

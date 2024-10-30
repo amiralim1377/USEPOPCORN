@@ -4,7 +4,7 @@ import WatchListItem from "../WatchListItem/WatchListItem";
 
 function List() {
   const watchlist = useSelector((state) => state.watchlist);
-  console.log(watchlist);
+  //   console.log(watchlist);
 
   return (
     <div>

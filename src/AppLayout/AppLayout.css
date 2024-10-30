@@ -2,8 +2,9 @@
   height: 97vh;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #4a628a;
+  background-color: #e2b616;
   object-fit: cover;
+  background-size: cover;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

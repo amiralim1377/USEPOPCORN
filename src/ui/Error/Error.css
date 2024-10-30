@@ -7,7 +7,7 @@
 
 .ErrorStyle {
   font-family: "Poppins";
-  color: #1a1a19;
+  color: #091057;
   font-size: 72px;
   font-weight: 700;
   line-height: 88px;
@@ -21,11 +21,12 @@
 .button-40 {
   margin-top: 150px;
   padding: 20px;
-  background-color: #111827;
+
+  background-color: #091057;
+  color: #e2b616;
   border: 1px solid transparent;
   border-radius: 0.75rem;
   box-sizing: border-box;
-  color: #ffffff;
   cursor: pointer;
   flex: 0 0 auto;
   font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
@@ -47,7 +48,7 @@
 }
 
 .button-40:hover {
-  background-color: #374151;
+  background-color: #1230ae;
 }
 
 .button-40:focus {

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function InputElem() {
   const [querykey, setQuerykey] = useState(null);
-  console.log(querykey);
+  // console.log(querykey);
 
   const {
     register,
