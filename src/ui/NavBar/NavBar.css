@@ -1,0 +1,30 @@
+.NavBarWrapper {
+  background-color: #121212;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbarlogo p {
+  color: aliceblue;
+}
+
+.navbarinput {
+}
+
+.navbarinput input {
+  width: 580px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

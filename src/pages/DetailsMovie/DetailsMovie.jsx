@@ -3,7 +3,7 @@ import "./DetailsMovie.css";
 import { useQuery } from "@tanstack/react-query";
 import { getfilmsbyid } from "../../services/getfilmsbyid";
 import { useDispatch, useSelector } from "react-redux";
-import { addwatch } from "../../Reducer/watchlistReducer";
+import { addwatch, removewatch } from "../../Reducer/watchlistReducer";
 
 function DetailsMovie() {
   const [searchparams] = useSearchParams();
@@ -27,10 +27,13 @@ function DetailsMovie() {
 
   const handleAddWatch = () => {
     dispatch(addwatch(filmsdata));
-    navigate("/watchlist");
   };
 
-  const hanldegowatchlist = () => {
+  const handleremovewatch = () => {
+    dispatch(removewatch(imdbID));
+  };
+
+  const handlegowatchlist = () => {
     navigate("/watchlist");
   };
 
@@ -44,10 +47,10 @@ function DetailsMovie() {
           <div className="textDetails">
             <h1>{filmsdata.Title}</h1>
             <div className="firstdetails">
-              <p>Year:{filmsdata.Year}</p>
-              <p>Runtime:{filmsdata.Runtime}</p>
-              <p>Genre:{filmsdata.Genre}</p>
-              <p>Released:{filmsdata.Released}</p>
+              <p>Year: {filmsdata.Year}</p>
+              <p>Runtime: {filmsdata.Runtime}</p>
+              <p>Genre: {filmsdata.Genre}</p>
+              <p>Released: {filmsdata.Released}</p>
               <p>imdbRating: {filmsdata.imdbRating}</p>
               <p>Awards: {filmsdata.Awards}</p>
             </div>
@@ -61,16 +64,15 @@ function DetailsMovie() {
                 <p>Actors: {filmsdata.Actors}</p>
               </div>
               <div className="btnWrapperDetailsPage">
-                <button onClick={handleback}>back</button>
+                <button onClick={handleback}>Back</button>
                 {!isAdded ? (
-                  <button onClick={handleAddWatch}>Add To Watch List</button>
+                  <button onClick={handleAddWatch}>+Watch List</button>
                 ) : (
-                  <button onClick={hanldegowatchlist}>
-                    Before Added
-                    <br />
-                    show Watchlist
+                  <button onClick={handleremovewatch}>
+                    Remove from Watchlist
                   </button>
                 )}
+                <button onClick={handlegowatchlist}>show Watchlist</button>
               </div>
             </div>
           </div>

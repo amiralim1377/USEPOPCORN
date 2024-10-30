@@ -110,7 +110,7 @@
 }
 
 .personDetails {
-  width: 65%;
+  width: 60%;
 }
 
 .personDetails p {
@@ -123,20 +123,24 @@
 }
 
 .btnWrapperDetailsPage {
-  width: 35%;
+  width: 40%;
   text-align: center;
   margin-bottom: 15px;
+
+  padding: 5px;
+  margin: 5px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: red; */
 }
 
 .btnWrapperDetailsPage button {
   cursor: pointer;
   background: #2c2c2c;
   color: #5799ef;
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 120px;
   font-family: Roboto;
   border: none;
   border-radius: 10px 10px 10px 10px;
@@ -144,4 +148,8 @@
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
   -o-border-radius: 10px 10px 10px 10px;
+}
+
+.btnWrapperDetailsPage button:hover {
+  background: #30353c;
 }

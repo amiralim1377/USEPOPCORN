@@ -30,7 +30,7 @@ function FilmItem({ item }) {
         </div>
         <div className="btnWrapper">
           <Link to={`/details?imdbID=${imdbID}`}>
-            <button>+ More Details</button>
+            <button>More Details</button>
           </Link>
           {!isAdded ? (
             <button onClick={handleaddwatchlist}>+Add To Watchlist</button>

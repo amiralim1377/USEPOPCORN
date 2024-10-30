@@ -1,15 +1,16 @@
-/* .wrapper {
+.wrapper {
   height: 97vh;
   max-width: 1440px;
   margin: 0 auto;
-  background: #4a628a;
+  /* background: #4a628a; */
   object-fit: cover;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-} */
+  /* background-image: url("https://s3.filebin.net/filebin/bd6099ba5763e310b6103c7aef35dac358ba48d30e9dbaf8979d6b7732692222/94a4830901c7abd9057a1e4374588c037a43e069c1e8e82f87c8c4db69e1b241?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7pMj6hGeoKewqmMQILjm%2F20241030%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241030T135323Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D60&response-content-disposition=filename%3D%22StockCake-Popcorn%20Movie%20Night_1730044093.jpg%22&response-content-type=image%2Fjpeg&X-Amz-Signature=4d3f01badca6c3af7ef091f8758e290948487ba791d8a955a2d9624bbc988b97"); */
+}
 
 .textInputWrapper {
   display: grid;
