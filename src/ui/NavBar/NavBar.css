@@ -59,6 +59,7 @@
   width: 45px;
   height: 45px;
   color: #133e87;
+  cursor: pointer;
   /* background-color: green; */
 }
 
@@ -94,4 +95,12 @@
 .navlink {
   text-decoration: none;
   color: black;
+}
+
+.righticonwrapper {
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
 }

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import List from "../../ui/List/List";
-import SummeryWatched from "../../ui/SummeryWatched/SummeryWatched";
 import Error from "../../ui/Error/Error";
+import "./WatchList.css";
 
 function WatchList() {
   const isAddedInWatchlist = useSelector((state) => state.watchlist);
@@ -15,7 +15,6 @@ function WatchList() {
           just search your favorit movie`}
         />
       )}
-      <SummeryWatched />
       <List />
     </div>
   );

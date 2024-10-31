@@ -9,7 +9,6 @@ function FilmItem({ item }) {
   const isAdded = useSelector((state) =>
     state.watchlist.some((film) => film.imdbID === imdbID)
   );
-  // console.log(isAdded);
 
   const handleaddwatchlist = () => {
     dispatch(addwatch(item));

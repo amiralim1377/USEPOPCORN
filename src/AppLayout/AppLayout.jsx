@@ -16,7 +16,7 @@ function AppLayout() {
       }}
     >
       {location.pathname === "/" ? "" : <NavBar />}
-      <div></div>
+
       <Outlet />
     </div>
   );

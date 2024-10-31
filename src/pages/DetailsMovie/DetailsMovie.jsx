@@ -4,6 +4,9 @@ import { useQuery } from "@tanstack/react-query";
 import { getfilmsbyid } from "../../services/getfilmsbyid";
 import { useDispatch, useSelector } from "react-redux";
 import { addwatch, removewatch } from "../../Reducer/watchlistReducer";
+import Error from "../../ui/Error/Error";
+import { useState } from "react";
+import Spinner from "../../ui/spinner/Spinner";
 
 function DetailsMovie() {
   const [searchparams] = useSearchParams();
@@ -11,11 +14,19 @@ function DetailsMovie() {
   const isAdded = useSelector((state) =>
     state.watchlist.some((film) => film.imdbID === imdbID)
   );
-  console.log(isAdded);
 
-  const { isLoading, data: filmsdata } = useQuery({
-    queryKey: ["querykey"],
+  const [cachedData, setCachedData] = useState(null);
+
+  const {
+    isLoading,
+    data: filmsdata,
+    error,
+  } = useQuery({
+    queryKey: ["querykey", imdbID],
     queryFn: () => getfilmsbyid(imdbID),
+    onSuccess: (data) => {
+      setCachedData(data);
+    },
   });
 
   const navigate = useNavigate();
@@ -36,6 +47,12 @@ function DetailsMovie() {
   const handlegowatchlist = () => {
     navigate("/watchlist");
   };
+
+  if (isLoading && !cachedData) return <Spinner />;
+  const dataToShow = isLoading && cachedData ? cachedData : filmsdata;
+  if (error || (dataToShow && dataToShow.Response === "False")) {
+    return <Error ErrorMessage={dataToShow?.Error || "Error loading data"} />;
+  }
 
   return (
     <div>
