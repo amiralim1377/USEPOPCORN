@@ -42,9 +42,9 @@ function Search() {
   return (
     <div>
       <ul>
-        {dataToShow?.Search?.map((item, index) => (
-          <FilmItem item={item} key={item.imdbID || index} />
-        ))}
+        {dataToShow?.Search?.map((item, index) =>
+          item.imdbID ? <FilmItem item={item} key={item.imdbID || index} /> : ""
+        )}
       </ul>
     </div>
   );
