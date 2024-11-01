@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Homepage from "./pages/Home/Homepage";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AppLayout from "./AppLayout/AppLayout";
 import Search from "./pages/Search/Search";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import DetailsMovie from "./pages/DetailsMovie/DetailsMovie";
 import WatchList from "./pages/WatchList/WatchList";
+import Homepage from "./pages/Home/Homepage";
 
 const router = createBrowserRouter([
   {
