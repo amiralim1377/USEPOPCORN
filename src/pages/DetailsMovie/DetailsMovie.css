@@ -15,9 +15,7 @@
 .detailsWrapper {
   display: flex;
   justify-content: space-between;
-  /* background: red; */
   flex-wrap: wrap;
-
   width: 95%;
   height: 95%;
   border-radius: 20px;

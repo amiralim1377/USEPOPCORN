@@ -5,7 +5,6 @@ import "./WatchList.css";
 
 function WatchList() {
   const isAddedInWatchlist = useSelector((state) => state.watchlist);
-  console.log(isAddedInWatchlist.length);
 
   return (
     <div>

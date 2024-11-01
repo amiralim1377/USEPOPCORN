@@ -27,6 +27,7 @@ function Search() {
       setCachedData(data);
     },
   });
+  // const imdbIDkey = filmsdata?.Search?.imdbID;
 
   if (error || (filmsdata && filmsdata.Response === "False")) {
     return <Error ErrorMessage={filmsdata?.Error || "Error loading data"} />;
@@ -38,13 +39,11 @@ function Search() {
     return <Spinner />;
   }
 
-  const imdbIDkey = filmsdata?.Search?.imdbID;
-
   return (
     <div>
       <ul>
-        {dataToShow?.Search?.map((item) => (
-          <FilmItem key={item.imdbIDkey} item={item} />
+        {dataToShow?.Search?.map((item, index) => (
+          <FilmItem item={item} key={item.imdbID || index} />
         ))}
       </ul>
     </div>
