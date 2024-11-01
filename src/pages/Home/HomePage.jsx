@@ -1,7 +1,7 @@
 import InputElem from "../../ui/inputElem/inputElem";
 import "./HomePage.css";
 
-function Homepage() {
+function HomePage() {
   return (
     <div>
       <div className="textInputWrapper">
@@ -14,4 +14,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;

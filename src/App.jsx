@@ -5,7 +5,7 @@ import Search from "./pages/Search/Search";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import DetailsMovie from "./pages/DetailsMovie/DetailsMovie";
 import WatchList from "./pages/WatchList/WatchList";
-import Homepage from "./pages/Home/Homepage";
+import HomePage from "./pages/Home/Homepage";
 
 const router = createBrowserRouter([
   {
@@ -15,12 +15,12 @@ const router = createBrowserRouter([
       {
         path: "homepage",
         index: true,
-        element: <Homepage />,
+        element: <HomePage />,
       },
       {
         path: "/",
         index: true,
-        element: <Homepage />,
+        element: <HomePage />,
       },
       {
         path: "search/:film",
